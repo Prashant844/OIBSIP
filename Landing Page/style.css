@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Cinzel Decorative", cursive;
+}
+
+/**************Header************************/
+
+header {
+	width: 100vw;
+  padding: 2rem;
+  border-bottom: 1px solid rgb(185, 190, 190);
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h1 {
+  font-weight: lighter;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+nav > ul > li {
+	list-style: none;
+	font-size: 1.3rem;
+	font-weight: lighter;
+}
+nav > ul > li > a {
+	text-decoration: none;
+	padding: 0.5rem 0.8rem;
+	color: black;
+	border-radius: 3px;
+	transition: all 0.4s ease;
+}
+nav > ul > li > a:hover {
+	background-color: black;
+	color: white;
+}
+ul > button {
+	font-size: 1rem;
+	padding: 0.5rem 2.5rem;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+ul > button:hover {
+	color: wheat;
+}
+
+/**************Hero************************/
+
+.hero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  /* line-height: 80px; */
+}
+.hero > p,
+#tagline,
+button {
+  z-index: 999;
+  color: wheat;
+}
+#tagline {
+  font-size: 80px;
+  padding: 1.5rem;
+}
+#bottom {
+  font-size: 1.5rem;
+  width: 70%;
+  line-height: 40px;
+  padding-bottom: 1rem;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.hero > button {
+	padding: 0.7rem 2rem;
+	color: black;
+	background-color: wheat;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+.hero > button:hover {
+	background-color: white;
+}
+
+/**************Features************************/
+
+.features {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+}
+.features > h1 {
+  font-size: 60px;
+}
+.features > p {
+	font-size: 30px;
+}
+.features > .feature {
+	width: 80%;
+	line-height: 30px;
+	height: 60%;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+}
+.fa-wave-square,
+.fa-scissors,
+.fa-user {
+  background-color: wheat;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
+}
+.feature-1,
+.feature-2,
+.feature-3 {
+  box-shadow: 2px 4px lightgray;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  transition: all 0.7s ease;
+}
+.feature-1:hover,
+.feature-2:hover,
+.feature-3:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.feature-1 > p,
+.feature-2 > p,
+.feature-3 > p {
+  color: rgb(118, 110, 110);
+}
+
+/**************Clients Says************************/
+
+.clients {
+	width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients > h1 {
+  font-size: 50px;
+}
+.clients > p {
+  font-size: 30px;
+}
+.clients > .inner {
+	width: 90%;
+  height: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.clients > .inner > .client {
+	width: 30%;
+  border-bottom-right-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0.5rem;
+  box-shadow: 2px 3px lightgrey;
+  transition: all 0.7s ease;
+}
+.clients > .inner > .client-2, .client-4, .client-6
+{
+	height: 30%;
+	background-color: black;
+	color: wheat;
+}
+.clients > .inner > .client:hover 
+{
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.clients > .inner > .client-2>h3>i, .client-4>h3>i, .client-6>h3>i
+{
+	color: black;
+}
+
+/**************Pricing Figure************************/
+.pricing
+{
+	width:100vw;
+	height:auto;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	background-color: black;
+	color: wheat;
+	padding: 2rem;
+}
+.pricing > h1
+{
+	font-size: 50px;
+	margin-top: 2rem;
+	padding: 1.5rem;
+}
+.pricing > h2
+{
+	padding: 2rem;
+}
+.pricing > h2 > span
+{
+	margin: 2rem;
+}
+.pricing > .price-segments
+{
+	width:80%;
+	height:80%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.price-segments > .segment
+{
+	padding: 2.5rem;
+	width: 33%;
+	border: 1px solid wheat;
+	margin: 1rem;
+	line-height: 50px;
+	border-top-left-radius: 35px;
+	border-bottom-right-radius: 35px;
+	transition: all 0.9s ease;
+}
+.price-segments > .segment:hover
+{
+	cursor: pointer;
+	background-color: wheat;
+	color: black;
+}
+.price-segments > .segment >ul>li
+{
+	list-style-type: none;
+}
+.price-segments > .segment > span
+{
+	float: right;
+}
+.price-segments > .segment-2
+{
+	background-color: wheat;
+	color: black;
+	font-weight: bold;
+}
+
+.price-segments > .segment > ul > li>i
+{
+	margin: 0rem 1rem 0rem 0rem;
+	background-color: wheat;
+	border-radius: 50%;
+	color: black;
+	padding: 0.5rem;
+}
+.price-segments > .segment-2 > ul > li>i
+{
+	margin: 0rem 1rem 0rem 0rem;
+	background-color: black;
+	border-radius: 50%;
+	color: wheat;
+	padding: 0.5rem;
+}
+
+/**************Footer************************/
+
+.footer
+{
+	width:100vw;
+	height:30vh;
+	background-color: black;
+	color: wheat;
+	border-top: 1px solid wheat;
+	position: relative;
+}
+.footer > h2
+{
+	left: 5%;
+	top: 15%;
+	margin-left: 2rem;
+	position: absolute;
+}
+.footer > p
+{
+	margin-left: 2rem;
+	position: absolute;
+	top: 35%;
+	left: 5%;
+}
+.footer .copyright
+{
+	width: 100%;
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer .copyright > span>i
+{
+	padding: 1rem;
+	margin-left: 0.5rem;
+	font-size: 1rem;
+	background-color: wheat;
+	color: black;
+	border-radius: 50%;
+}
