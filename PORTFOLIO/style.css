@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+/* header */
+.navbar
+{
+    background-color: rgb(255, 103, 27);
+    font-size: 1.2rem;
+}
+.navbar-brand
+{
+    font-family: 'Orbitron', sans-serif;
+
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row h1
+{
+    text-align: left;
+    font-weight: lighter;
+}
+.row h1 .name
+{
+    color: rgb(255, 103, 27);
+}
+.row h1 span
+{
+    padding-top: 1.5cm;
+}
+.home
+{
+    height: 100vh;
+    width: 100vw;
+}
+#home-img
+{
+    width: 40%;
+    height: 10%;
+    border: 4px solid rgb(255, 103, 27);
+    clip-path: inset(0 0 0 0);
+    position: relative;
+    transition: all 2s ease-in;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    /* animation: float 2.5s linear; */
+}
+@media (max-width: 480px) {
+    #home-img {
+        width: 60%;
+    }
+  }
+/* @keyframes float 
+{
+ 0%
+ {
+    scale: 0;
+    opacity: 0;
+ }   
+ 100%
+ {
+    scale: 1;
+    opacity: 1;
+ }
+} */
+.about hr
+{
+    height: 3px;
+    background-color: rgb(255, 103, 27);
+}
+.about h1, #Education h1, #skill-heading, #projects h1
+{
+    font-family: 'Teko', sans-serif;
+}
+#abt-img
+{
+    width: 40%;
+    height: 50%;
+}
+.btn
+{
+    background-color: black;
+    color: white;
+    transition: all 0.4s ease;
+}
+button:hover
+{
+    background-color: rgb(255, 103, 27);
+    color: black;
+}
+.card
+{
+    transition: all 0.4s ease;
+}
+.card-body:hover
+{
+    background-color: rgb(213, 213, 213);
+    color: black;
+    cursor: pointer;
+}
+.education
+{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(255, 217, 171);
+}
+.edu-card
+{
+    background-color: rgb(252, 180, 92);
+
+}
+.Skills
+{
+    width: 100vw;
+    height: auto;
+}
+.Skills .shadow
+{
+    border-radius: 10px;
+    transition: all 0.8s ease-in-out;
+}
+.shadow img
+{
+    width: 35%;
+    height: 35%;
+}
+
+/* .Skills .shadow:hover
+{
+    background-color: #dcdcdc;
+    cursor: pointer;
+} */
+.contact
+{
+    
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-btn:hover
+{
+    color: lime;
+}
+.contact-pad
+{
+    background: #fff;
+}
+.contact-pad input
+{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 90%;
+    margin: auto;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+textarea
+{
+    resize: none;
+    font-size: 1.5rem;
+    border: none;
+    padding: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+.project
+{
+    width: 100vw;
+    height: auto;
+    padding: 2rem;
+}
+.social
+{
+   
+   padding: 0.5rem 1rem;
+}
+.social:hover
+{
+   color: red;
+   border: 1px solid red;
+   padding: 0.5rem 1rem;
+   border-radius: 20px;
+}
